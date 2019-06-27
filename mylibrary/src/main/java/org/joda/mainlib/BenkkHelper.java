@@ -36,6 +36,13 @@ public class BenkkHelper {
         rm.runCommand("pm clear com.vng.pubgmobile");
     }
 
+    public void clearGameDataLite() {
+        rm.runCommand("rm -rf /sdcard/tencent");
+        rm.runCommand("rm -rf /sdcard/MidasOversea");
+        rm.runCommand("rm -rf /sdcard/.backups");
+        rm.runCommand("rm -rf /data/data/com.tencent.ig/files");
+    }
+
     public static void resetGoogleAd() {
         rm.runCommand("rm -rf /data/data/com.google.android.gms/shared_prefs/adid_settings.xml");
     }
